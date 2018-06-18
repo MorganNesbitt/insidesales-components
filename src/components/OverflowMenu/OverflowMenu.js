@@ -100,6 +100,7 @@ const OverflowWrapper = styled.div`
 class OverflowMenu extends React.Component {
   static propTypes = {
     isDisabled: PropTypes.bool,
+    isOpen: PropTypes.bool,
     openUp: PropTypes.bool,
     openRight: PropTypes.bool,
     options: PropTypes.array.isRequired,
@@ -166,6 +167,13 @@ class OverflowMenu extends React.Component {
     );
   }
 
+  determineMenuVisibility = () => {
+    if(_.isBoolean(this.props.isOpen)) {
+      return this.props.isOpen;
+    }
+    return this.state.menuVisible
+  };
+
   render() {
     return (
       <OverflowWrapper
@@ -174,7 +182,7 @@ class OverflowMenu extends React.Component {
         <InteractiveElement onClick={() => { this.toggleMenu(); }}>
           {this.props.icon}
         </InteractiveElement>
-        {this.state.menuVisible &&
+        {this.determineMenuVisibility() &&
           <OptionsContainer openUp={this.props.openUp} openRight={this.props.openRight}>
             <OptionsWrapper>
               {this.renderMenu()}

@@ -91,6 +91,26 @@ storiesOf('Menus', module)
             }
           },
           {
+            title: 'Example: force open',
+            sectionFn: () => {
+              const options = [
+                { action: action('click option'), label: 'Option 1' },
+                { action: action('click option'), label: 'Option 2' }
+              ];
+              return  <DarkBackground><OverflowMenu isOpen={true} options={options} /></DarkBackground>
+            }
+          },
+          {
+            title: 'Example: force closed',
+            sectionFn: () => {
+              const options = [
+                { action: action('click option'), label: 'Option 1' },
+                { action: action('click option'), label: 'Option 2' }
+              ];
+              return  <DarkBackground><OverflowMenu isOpen={false} options={options} /></DarkBackground>
+            }
+          },
+          {
             title: 'Example: custom icon',
             sectionFn: () => {
               const options = [
