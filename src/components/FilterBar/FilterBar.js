@@ -72,7 +72,7 @@ class FilterBar extends React.Component {
     })
   }
 
-  getFilterBar = () => {
+  render() {
     if(this.state.showSearch) {
       return (
         <SearchBarWrapper>
@@ -115,14 +115,6 @@ class FilterBar extends React.Component {
             </StyledInteractiveElement>
           </ButtonsWrapper>
         </FilterBarWrapper>
-    );
-  }
-
-  render() {
-    return (
-      <div>
-        {this.getFilterBar()}
-      </div>
     );
   }
 }
