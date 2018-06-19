@@ -60,23 +60,31 @@ class FilterBar extends React.Component {
   showSearch = () => {
     this.setState({
       showSearch: true
-    })
+    });
   }
 
   hideSearch = () => {
+    this.props.onSearchChange('');
     this.setState({
       showSearch: false
-    })
+    });
+  }
+
+  onSearchChange = (e) => {
+    if (e) {
+      e.preventDefault();
+    }
+    this.props.onSearchChange(_.get(e, 'target.value'));
   }
 
   render() {
     if(this.state.showSearch) {
-      return (
+    return (
         <SearchBarWrapper>
           <Icons.SearchMaterialIcon fill={colors.black60}/>
           <StyledInputItem
             type={'text'}
-            onChange={this.props.onSearchChange}
+            onChange={this.onSearchChange}
             placeholder={this.props.searchPlaceholder}
             autoFocus/>
           <StyledInteractiveElement onClick={this.hideSearch}>
