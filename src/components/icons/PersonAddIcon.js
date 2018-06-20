@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { colors } from '../styles'
-
 const PersonAddIcon = props => (
   <svg {...props.size || { width: '24px', height: '24px' }} {...props} viewBox="0 0 24 24">
     <path d="M0 0h24v24H0z" fill="none"/>
