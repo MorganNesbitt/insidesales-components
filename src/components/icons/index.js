@@ -53,6 +53,7 @@ import NeuralIcon from './NeuralIcon';
 import NotificationBellIcon from './NotificationBellIcon';
 import OtherFilledIcon from './OtherFilledIcon';
 import PauseCircleIcon from './PauseCircleIcon';
+import PersonAddIcon from './PersonAddIcon';
 import PersonIcon from './PersonIcon';
 import PhoneFilledIcon from './PhoneFilledIcon';
 import PlayIcon from './PlayIcon';
@@ -126,6 +127,7 @@ export default {
   NotificationBellIcon,
   OtherFilledIcon,
   PauseCircleIcon,
+  PersonAddIcon,
   PersonIcon,
   PhoneFilledIcon,
   PlayIcon,
