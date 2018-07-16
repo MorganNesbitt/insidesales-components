@@ -2,7 +2,7 @@ import React from 'react';
 
 const CalendarIcon = props => (
     <svg {...props.size || { width: '18px', height: '20px' }} {...props} viewBox="0 0 18 20">
-        <title>{props.title}</title>
+        {props.title && <title>{props.title}</title>}
         <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g id="Today-24px" transform="translate(-3.000000, -1.000000)">
                 <g id="ic_today_black_24px">

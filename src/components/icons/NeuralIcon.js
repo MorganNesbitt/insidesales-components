@@ -4,7 +4,7 @@ import { colors } from '../styles/colors';
 
 const NeuralIcon = props => (
   <svg {...props.size || { width: '21px', height: '24px' }} viewBox="0 0 21 24" version="1.1">
-    <title>{props.title}</title>
+    {props.title && <title>{props.title}</title>}
     <g id="Active-Filters" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Icon/Predictive/Neural-Scoring-Blue" transform="translate(-2.000000, 0.000000)" fill={props.fill || colors.neuralBlue}>
         <g id="Neural-Score-Icon-24px" transform="translate(2.000000, 0.000000)">

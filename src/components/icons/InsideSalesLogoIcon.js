@@ -2,7 +2,7 @@ import React from 'react';
 
 const InsideSalesLogoIcon = props => (
   <svg {...props.size || { width: '180px', height: '180px' }} {...props} viewBox="0 0 180 180">
-    <title>{props.title}</title>
+    {props.title && <title>{props.title}</title>}
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="InsideSales-logo">
         <polygon id="Background" fill="#3AB676" points="0 180 180 180 180 0 0 0"></polygon>

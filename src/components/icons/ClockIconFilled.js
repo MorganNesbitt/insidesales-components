@@ -2,7 +2,7 @@ import React from 'react';
 
 const ClockIconFilled = props => (
   <svg {...props.size || { width: '24px', height: '24px' }} {...props} viewBox="0 0 24 24">
-    <title>{props.title}</title>
+    {props.title && <title>{props.title}</title>}
     <defs>
       <path d="M0 0h24v24H0V0z" id="a" />
     </defs>
