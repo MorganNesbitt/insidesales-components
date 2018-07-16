@@ -2,8 +2,8 @@ import React from 'react';
 
 const BouncedIcon = props => (
   <svg {...props.size || { width: '24px', height: '24px' }} {...props} viewBox="0 0 24 24">
-<title>{props.title}</title>
-        <defs>
+    <title>{props.title}</title>
+    <defs>
       <path d="M24 24H0V0h24v24z" id="a" />
     </defs>
     <clipPath id="b">
