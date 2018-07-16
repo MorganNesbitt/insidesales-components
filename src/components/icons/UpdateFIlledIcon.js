@@ -2,7 +2,8 @@ import React from 'react';
 
 const UpdateFilledIcon = props => (
   <svg {...props.size || { width: '24px', height: '24px' }} {...props} viewBox="0 0 24 24">
-    <g id="Notifications" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+<title>{props.title}</title>
+        <g id="Notifications" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Update-Peek" transform="translate(-23.000000, -80.000000)">
         <g id="Icon/Action/Update-System-White" transform="translate(22.000000, 77.000000)">
           <g id="Shape">
