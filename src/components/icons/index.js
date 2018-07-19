@@ -82,12 +82,14 @@ import PlayIcon from './PlayIcon';
 import PlusIcon from './PlusIcon';
 import RadioboxBlankIcon from './RadioboxBlankIcon';
 import RadioboxMarkedIcon from './RadioboxMarkedIcon';
+import RefreshIcon from './RefreshIcon';
 import ReminderIcon from './ReminderIcon';
 import SalesforceIcon from './SalesforceIcon';
 import SearchMaterialIcon from './SearchMaterialIcon';
 import SkipIcon from './SkipIcon';
 import TaskIcons from './TaskIcons';
 import TemplateIcon from './TemplateIcon';
+import TodayIcon from './TodayIcon';
 import TrashIcon from './TrashIcon';
 import ImportIcon from './ImportIcon';
 import InfoOutlineIcon from './InfoOutlineIcon';
@@ -185,6 +187,7 @@ export default {
   PlusIcon,
   RadioboxBlankIcon,
   RadioboxMarkedIcon,
+  RefreshIcon,
   ReminderIcon,
   SalesforceIcon,
   SearchMaterialIcon,
@@ -194,6 +197,7 @@ export default {
   TaskIcons,
   TeamsIcon,
   TemplateIcon,
+  TodayIcon,
   TrashIcon,
   UpdateFilledIcon,
   VerifyShieldIcon,
