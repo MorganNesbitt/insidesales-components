@@ -40,7 +40,10 @@ const TextBox = styled.div`
     transition: border-color 0.14s ease-in-out;
     width: 100%;
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: ${(props) => { 
+        if (props.options) return '25px';
+        return '16px';
+    }};
     padding-bottom: ${props => props.label ? '9px' : '17px'};
 
     ${(props) => {
@@ -140,7 +143,8 @@ export default class TextInputBox extends TextInput {
                     disabled={disabled}
                     lineColor={lineColor}
                     collapsed={collapsed}
-                    label={label}>
+                    label={label}
+                    options={options}>
                 <InputBoxItem
                     type={this.getInputType(inputType)}
                     onFocus={this.focused}
