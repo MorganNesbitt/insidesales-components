@@ -163,6 +163,46 @@ storiesOf('Form', module)
                 </div>
               )
             },
+            {
+              title: 'Example: text input with options',
+              sectionFn: () => (
+                <div style={{ width: '140px' }}>
+                  <TextInputBox
+                    label="Country"
+                    onChange={action('value')}
+                    selectOptionsWidth={400}
+                    options={[
+                      {
+                        label: '+1 (US)',
+                        value: '+1'
+                      },
+                      {
+                        label: '+44 (UK)',
+                        value: '+44'
+                      },
+                      {
+                        label: '+35 (AB)',
+                        value: '+35'
+                      },
+                      {
+                        label: '+45 (CD)',
+                        value: '+45'
+                      }
+                    ]}
+                  />
+                </div>
+              )
+            },
+            {
+              title: 'Example: text input with placeholder',
+              sectionFn: () => (
+                <TextInputBox
+                  label="Placeholder"
+                  onChange={action('value')}
+                  placeholder="what a beautiful placeholder"
+                />
+              )
+            },
           ]
         }
       ]
