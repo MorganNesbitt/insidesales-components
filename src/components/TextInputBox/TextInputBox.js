@@ -197,4 +197,15 @@ TextInput.propTypes = {
     value: PropTypes.any,
     onChange: PropTypes.func,
     collapsed: PropTypes.bool,
+    promotedOptions: PropTypes.arrayOf(PropTypes.shape({
+        value: PropTypes.any,
+        label: PropTypes.string,
+        disabled: PropTypes.bool
+    })),
+    options: PropTypes.arrayOf(PropTypes.shape({
+        value: PropTypes.any,
+        label: PropTypes.string,
+        disabled: PropTypes.bool
+    })),
+    placeholder: PropTypes.string,
 };
