@@ -19,8 +19,7 @@ export const tron = {
 export const blue = {
   blue: '#0075B8',
   blue40: 'rgba(0,117,184,0.4)',
-  blue10: 'rgba(0,117,184,0.1)',
-  blueGray: '#7f8e92'
+  blue10: 'rgba(0,117,184,0.1)'
 };
 
 export const orange = {

@@ -87,7 +87,7 @@ export const darkSelectInputTheme = {
 
 export const transparentCenterTheme = {
   background: 'transparent',
-  iconColor: colors.blueGray,
+  iconColor: colors.tronC,
   textPaddingLeft: '29px',
   alignSelf: 'center'
 }
