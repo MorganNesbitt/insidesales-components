@@ -45,10 +45,7 @@ const DialogBackground = styled.div`
 const DialogBase = styled.div`
   position: relative;
   width: ${(props) => {
-    if (props.width) {
-      return `${props.width}px`;
-    }
-    return '336px';
+    return props.width ? `${props.width}px` : '336px';
   }};
   display: flex;
   flex-direction: column;
