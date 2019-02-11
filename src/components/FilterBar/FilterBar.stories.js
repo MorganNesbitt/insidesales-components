@@ -42,10 +42,12 @@ class FilterBarWrapper extends React.PureComponent {
       promotedSortOptions={promotedOptions}
       selectedSortOption={this.state.sortValue}
       sortLabel={'Sort By'}
+      onSearchComplete={this.props.onSearchComplete}
       onSortOptionChange={(value) => {
         this.setState({ sortValue: value})
       }}
       onClickFilter={action('on clicked filter')}
+      onSearchClear={action('on search clear')}
       onSearchChange={
         (value) => {
           this.setState({ searchValue: value})
@@ -75,7 +77,7 @@ storiesOf('Components', module)
             subtitle: '',
             sectionFn: () => (
               <div style={darkExample}>
-                <FilterBarWrapper/>
+                <FilterBarWrapper onSearchComplete={action('You have searched')}/>
               </div>
             )
           },
